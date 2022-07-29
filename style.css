@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-image: linear-gradient(
+		65deg,
+		rgba(189, 145, 25, 0.788),
+		rgba(112, 35, 136, 0.767)
+	);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 30px 25%;
+	overflow: hidden;
+	height: 100vh;
+}
+.title {
+	font-size: 32px;
+	letter-spacing: 1px;
+	color: white;
+	font-style: italic;
+	margin-top: 25px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+h3 {
+	font-size: 22px;
+	letter-spacing: 1px;
+	color: white;
+	font-weight: 400;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	text-indent: 70px;
+}
+.grid-items {
+	display: grid;
+	grid-template-columns: repeat(4, 120px);
+	gap: 20px;
+	width: max-content;
+	margin: auto;
+}
+.grid-items img {
+	width: 100%;
+	height: 120px;
+	position: relative;
+	z-index: 10;
+	background-color: #f8f8f8;
+	-webkit-user-drag: none;
+	cursor: pointer;
+}
+.match-el {
+	position: fixed;
+	right: -100%;
+	top: 20px;
+	background-color: rgb(34, 92, 158);
+	color: white;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	transition: 0.5s ease-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	padding: 15px 35px;
+	font-weight: bold;
+}
+.match-el.active {
+	right: 20px;
+}
+
+.winner {
+	background-image: linear-gradient(
+		20deg,
+		rgba(158, 34, 137, 0.9),
+		rgba(98, 45, 196, 0.9)
+	);
+	color: white;
+	height: 50px;
+	width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	letter-spacing: 1px;
+	position: fixed;
+	left: -100%;
+	z-index: 20;
+	top: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-ms-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	font-weight: bold;
+}
+.winner.active {
+	left: 20px;
+}
+
+button {
+	all: unset;
+	position: fixed;
+	top: 50%;
+	left: 20px;
+	text-align: center;
+	cursor: pointer;
+	width: 150px;
+	padding: 15px 10px;
+	background-image: linear-gradient(
+		80deg,
+		rgb(19, 168, 173),
+		rgb(178, 18, 192)
+	);
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
